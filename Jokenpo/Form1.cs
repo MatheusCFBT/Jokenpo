@@ -19,10 +19,11 @@ namespace Jokenpo
 
         private void btnJogar_Click(object sender, EventArgs e)
         {
+            this.Hide(); 
             FormGame TelaJogo = new FormGame();
 
-            Visible = false;
             TelaJogo.ShowDialog();
+            this.Show();
         }
     }
 }
